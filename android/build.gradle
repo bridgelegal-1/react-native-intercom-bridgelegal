@@ -1,6 +1,10 @@
 buildscript {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://maven.google.com" }
+        maven { url 'https://maven.fabric.io/public' }
     }
 
     dependencies {
@@ -31,9 +35,6 @@ android {
 
 repositories {
     mavenCentral()
-    maven {
-      url 'https://dl.bintray.com/intercom/intercom-maven'
-    }
 }
 
 dependencies {
